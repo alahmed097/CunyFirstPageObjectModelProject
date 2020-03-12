@@ -1,0 +1,5 @@
+com/cunyfirst/qa/base/TestBase.class
+com/cunyfirst/qa/pages/LogInPage.class
+com/cunyfirst/qa/pages/HomePage.class
+com/cunyfirst/qa/util/TestUtil.class
+com/cunyfirst/qa/pages/StudentCenter.class

@@ -1,0 +1,16 @@
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name= "CunyFirst Application Test Automation Suite">
+	
+	<test name="CunyFirst Test Cases">
+
+		<classes>
+			<class name="com.cunyfirst.qa.testcases.LoginPageTest" />
+			<class name="com.cunyfirst.qa.testcases.HomePageTest" />
+			<class name="com.cunyfirst.qa.testcases.StudentCenterPageTest" />
+		</classes>
+
+	 
+	
+	</test>
+
+</suite>

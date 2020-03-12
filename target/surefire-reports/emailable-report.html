@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Command line suite</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">105,156</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.cunyfirst.qa.testcases.HomePageTest</td><td><a href="#m0">verifyStudentCenterLinkTest</a></td><td rowspan="1">1583438959835</td><td rowspan="1">9714</td></tr><tr class="failedodd"><td rowspan="2">com.cunyfirst.qa.testcases.StudentCenterPageTest</td><td><a href="#m1">ClickOnMainMenuTest</a></td><td rowspan="1">1583438936142</td><td rowspan="1">1</td></tr><tr class="failedodd"><td><a href="#m2">verifyStudentCenterLinkTest</a></td><td rowspan="1">1583438898483</td><td rowspan="1">20201</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.cunyfirst.qa.testcases.HomePageTest</td><td><a href="#m3">verifyHomePageTitileTest</a></td><td rowspan="1">1583438947077</td><td rowspan="1">21</td></tr><tr class="passedodd"><td rowspan="2">com.cunyfirst.qa.testcases.LoginPageTest</td><td><a href="#m4">loginPageTittleTest</a></td><td rowspan="1">1583438974458</td><td rowspan="1">18</td></tr><tr class="passedodd"><td><a href="#m5">loginTest</a></td><td rowspan="1">1583438977551</td><td rowspan="1">8516</td></tr></tbody>
+</table>
+<h2>Command line test</h2><h3 id="m0">com.cunyfirst.qa.testcases.HomePageTest#verifyStudentCenterLinkTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.cunyfirst.qa.pages.StudentCenter.ClickOnMainMen(StudentCenter.java:14)
+	at com.cunyfirst.qa.testcases.HomePageTest.verifyStudentCenterLinkTest(HomePageTest.java:49)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.cunyfirst.qa.testcases.StudentCenterPageTest#ClickOnMainMenuTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.cunyfirst.qa.pages.StudentCenter.ClickOnMainMen(StudentCenter.java:14)
+	at com.cunyfirst.qa.testcases.StudentCenterPageTest.ClickOnMainMenuTest(StudentCenterPageTest.java:40)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.cunyfirst.qa.testcases.StudentCenterPageTest#verifyStudentCenterLinkTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: -0.003
+  (Session info: chrome=80.0.3987.132)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Alis-Air.home&apos;, ip: &apos;fe80:0:0:0:10a2:7d61:2ac9:b2b3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/b_/74r5y8tx4dj...}, goog:chromeOptions: {debuggerAddress: localhost:60456}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bff443b32badf147165b239b022c2a26
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.cunyfirst.qa.pages.HomePage.clickOnStudentCenterLink(HomePage.java:28)
+	at com.cunyfirst.qa.testcases.StudentCenterPageTest.verifyStudentCenterLinkTest(StudentCenterPageTest.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 45 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.cunyfirst.qa.testcases.HomePageTest#verifyHomePageTitileTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.cunyfirst.qa.testcases.LoginPageTest#loginPageTittleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.cunyfirst.qa.testcases.LoginPageTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
